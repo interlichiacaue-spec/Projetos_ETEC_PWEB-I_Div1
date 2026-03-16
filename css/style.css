@@ -1,0 +1,13 @@
+/*Reset e Estilo Base*/
+/*'0' e o seletor universal que aplica os estilos a todos os elementos da pagina*/
+*{/*begin*/
+   margin: 0; /*remove margens padrao que os navegadores adiconal*/
+   padding: 0; /*remove espaçamentos internos padrao*/
+   box-sizing: border-box; /*faz com que o padding e border sejam incluidos na largura e altura local do elemento*/
+}/*end*/
+body{
+    /*fontes: segoe UI e a primeira opçao se nao tiver, vau tentando as proximas*/
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
+    line-height: 1.6; /*altura entre as linhas 1.6x o tamahno da fonte*/
+    color: #333; /*cor do texto "cinza escuro*/
+}
