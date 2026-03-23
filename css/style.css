@@ -9,5 +9,32 @@ body{
     /*fontes: segoe UI e a primeira opçao se nao tiver, vau tentando as proximas*/
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, Sans-serif;
     line-height: 1.6; /*altura entre as linhas 1.6x o tamahno da fonte*/
-    color: #333; /*cor do texto "cinza escuro*/
+    color: #000000; /*cor do texto "cinza escuro*/
+    /*gradiente de fundo: 135deg é a direção, de roxo claro para roxo escuro*/
+    background: linear-gradient(135deg,#1beeaf 0%,#27bdf8 100%);
+    min-height: 100vh;/*vh = viewport height. Mínimo de 100% da altura da tela*/
 }
+/*===HEADER (cabeçalho)===*/
+header{
+    background-color: rgba(4, 255, 255, 0.95);/*Branco com 0.95 = 95% de opacidade*/
+    padding: 1rem 5%;/*rem = 1.6px (tamanho padrão da fonte),5% largura do container*/
+    display: flex; /*ativa o flexbox para layout flexivel*/
+    align-items: center; /*alinha os itens verticalmente ao centro*/
+    justify-content: space-between; /*espaço entre os itens(logo de um lado e menu do outro)*/
+    flex-wrap: wrap;/*permite quebra de linhas em telas pequenas*/
+    gap: 1rem;/*espaçamente entre os itens flexiveis (1rem = 16px)*/
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);/*sombra: eixo x eixo y desfoque na cor*/
+    position: sticky; /*Grudar no top ao rolar a pagina*/
+    top:0;/*distancia do top ao grudar*/
+    z-index: 1000;/*garante que fique acima dos outros elementos*/
+}
+    header img{
+        height: 60px; /*fixando a altura da imagem em pixel*/
+        width: auto;/*ajusta a largura automaticamente de acordo com a altura (mantem proporcional a imagem*/
+        transition: transform 0.3s ease;/*transição suave e de 3 segundos para a animação*/
+    }
+    header img:hover{/*hover (quando passa o mouse por cima ele faz alguma coisa*/
+    transform: scale(1.05);/*aumenta em 5% do tamanho da iamgem original*/
+    
+}
+    
