@@ -11,12 +11,12 @@ body{
     line-height: 1.6; /*altura entre as linhas 1.6x o tamahno da fonte*/
     color: #000000; /*cor do texto "cinza escuro*/
     /*gradiente de fundo: 135deg é a direção, de roxo claro para roxo escuro*/
-    background: linear-gradient(135deg,#1beeaf 0%,#27bdf8 100%);
+    background: linear-gradient(135deg,#444343 0%,#83888a 100%);
     min-height: 100vh;/*vh = viewport height. Mínimo de 100% da altura da tela*/
 }
 /*===HEADER (cabeçalho)===*/
 header{
-    background-color: rgba(4, 255, 255, 0.95);/*Branco com 0.95 = 95% de opacidade*/
+    background-color: rgba(255, 255, 255, 0.95);/*Branco com 0.95 = 95% de opacidade*/
     padding: 1rem 5%;/*rem = 1.6px (tamanho padrão da fonte),5% largura do container*/
     display: flex; /*ativa o flexbox para layout flexivel*/
     align-items: center; /*alinha os itens verticalmente ao centro*/
@@ -71,7 +71,7 @@ main{
     max-width: 1200px;/*largura maxima em pixels*/
     margin: 2rem auto;/*32px cima/baixo auto nas laterais (centraliza)*/
     padding: 2rem;/*espaçamento interno de 32px em todos os lados*/
-    background-color: rgba(0, 236, 236, 0.95);
+    background-color: rgba(255, 255, 255, 0.95);
     border-radius: 20px;/*borda arredondada*/
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);/*sombra um pouco mais pronunciada*/
     background-filter: blur(10px);/*efeito de desfoque no fundo*/
@@ -90,4 +90,29 @@ main{
         transform: translateY(0); /*posição original*/
     }
 }
+/*Garante que nada transborde*/
+img, iframe{
+    max-width: 100%;/*largura maxima*/
+    height: auto;
+    border-radius: 10px;
+}
+/*Deixa o video responsivo(mantem a proporção 16:9*/
+.video-wrapper{
+    position: relative;
+    padding-bottom: 56.25%;/*16:9*/
+    height: 0;
+    margin-top: 2rem;
+}
+.video-wrapper iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+iframe{
+    position: absolute;
+    align-items: center;
+}
+
     
